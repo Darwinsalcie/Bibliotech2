@@ -1,0 +1,91 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = Bibliotech.BlazorWASMCliente
+build_property.RootNamespace = Bibliotech.BlazorWASMCliente
+build_property.ProjectDir = C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.BlazorWASMCliente\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.BlazorWASMCliente
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Layout/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Libros/Libros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9zXExpYnJvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Libros/LibrosActualizar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlicm9zXExpYnJvc0FjdHVhbGl6YXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Usuarios/UsuarioNotificacionesActualizar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcVXN1YXJpb05vdGlmaWNhY2lvbmVzQWN0dWFsaXphci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Usuarios/UsuarioNotificacionesCrear.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcVXN1YXJpb05vdGlmaWNhY2lvbmVzQ3JlYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Usuarios/UsuarioReserva.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcVXN1YXJpb1Jlc2VydmEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Usuarios/UsuarioReservaCrear.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcVXN1YXJpb1Jlc2VydmFDcmVhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Usuarios/Usuarios.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcVXN1YXJpb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Usuarios/UsuariosActualizar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcVXN1YXJpb3NBY3R1YWxpemFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Usuarios/UsuariosNotificaciones.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXN1YXJpb3NcVXN1YXJpb3NOb3RpZmljYWNpb25lcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ys69qqyvjb
+
+[C:/Users/darwi/OneDrive/Desktop/New Blazor/Bibliotech.Api - Copy/Bibliotech.BlazorWASMCliente/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-esfsmunc5b

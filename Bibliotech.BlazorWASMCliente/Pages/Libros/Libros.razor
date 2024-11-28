@@ -1,0 +1,177 @@
+﻿@page "/libros/lista/{userId:int}"
+
+@using Bibliotech.BlazorWASMCliente.Services
+@using CurrieTechnologies.Razor.SweetAlert2
+@using Bibliotech.Shared.Libros;
+@using Bibliotech.BlazorWASMCliente.Services.Libros;
+@using Bibliotech.Shared.Libros;
+@using Bibliotech.Shared.Reserva
+@using Bibliotech.BlazorWASMCliente.Services.Reservas
+
+@inject SweetAlertService Swal;
+@inject ILibrosService libroService;
+@inject IReservasService reservaService;
+
+
+<h3>Libros</h3>
+
+<a class="btn btn-success btn-sm mb-3" href="usuario/reserva/@UserId">Ver Reservas</a>
+<!-- Buscador de Libros -->
+<div class="mb-3">
+    <input type="text" class="form-control" placeholder="Buscar por Título" @bind="searchTerm" @oninput="BuscarLibros" />
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Portada</th>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Genero</th>
+            <th>Estatus</th>
+            <th>ISBN</th>
+            <th>Fecha de Publicación</th>
+            <th>Reservar Libro</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (listaLibros == null)
+        {
+
+                <tr>
+                    <td colspan="5" align="center">
+                        <img style="width:50px" src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" />
+                    </td>
+                </tr>
+        }
+        else
+        {
+            @foreach (var item in listaLibros)
+            {
+                    <tr>
+                    <td>
+                        <img src=@item.PictureLink />
+
+                    </td>
+                        <td>@item.Tittle</td>
+
+
+                        <td>@item.Autor</td>
+                        <td>@item.Genero</td>
+                        <td>@item.Status</td>
+                        <td>@item.Isbn</td>
+                        <td>@item.PublicationDate?.ToString("dd/MM/yyyy")</td>
+                        <td>
+                        <button class="btn btn-primary btn-sm" @onclick="(() => CrearReserva(item.Id, UserId, item.Tittle))" disabled="@(item.Status != "Disponible")">
+                            <img src="/icons/fluent-mdl2--reservation-orders.svg" width="24" height="24" />
+                        </button>
+
+
+                        </td>
+                    </tr>
+            }
+
+        }
+
+    </tbody>
+</table>
+
+
+
+
+
+@code {
+    [Parameter]
+    public int UserId { get; set; } = 0;
+
+    private string searchTerm = string.Empty; // Para almacenar el término de búsqueda
+
+
+    List<LibroDTO>? listaLibros = null;
+
+    private async Task BuscarLibros()
+    {
+        if (string.IsNullOrEmpty(searchTerm))
+        {
+            listaLibros = await libroService.GetLibros(); // Si no hay término de búsqueda, cargar todos los libros
+        }
+        else
+        {
+            listaLibros = await libroService.GetBookByTittle(searchTerm); // Buscar libros por título
+        }
+    }
+
+
+    private async Task<bool> ExisteReserva(int userId, int bookId)
+    {
+        var reservas = await reservaService.GetReservasByUserId(userId);
+
+        return reservas.Any(r => r.BookId == bookId);
+    }
+
+
+
+    private async Task CrearReserva(int libroId, int userId, string bookname)
+    {
+        if (await ExisteReserva(userId, libroId))
+        {
+            await Swal.FireAsync("Error", "Ya tienes una reserva activa para este libro.", SweetAlertIcon.Warning);
+            return;
+        }
+
+        var reserva = new ReservaDTO
+            {
+                BookName = bookname,
+                BookId = libroId,
+                UserId = userId,
+                ReservationDate = DateTime.Now
+            };
+
+        var response = await reservaService.Guardar(reserva);
+
+        if (response.Success)
+        {
+            await Swal.FireAsync("Reserva creada", $"La reserva se ha realizado con éxito. ID de Reserva: {response.Value}", SweetAlertIcon.Success);
+        }
+        else
+        {
+            await Swal.FireAsync("Error", response.Message ?? "No se pudo crear la reserva", SweetAlertIcon.Error);
+        }
+    }
+
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        listaLibros = await libroService.GetLibros();
+
+    }
+
+
+    private async Task Eliminar(int id)
+    {
+        var resultado = await Swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Eliminar Libro",
+                Text = "Deseas eliminar el libro?",
+                Icon = SweetAlertIcon.Question,
+                ShowCancelButton = true
+            });
+
+        if (resultado.IsConfirmed)
+        {
+            var eliminado = await libroService.Eliminar(id);
+
+            if (eliminado)
+                listaLibros = listaLibros!.FindAll(e => e.Id != id);
+
+        }
+
+
+    }
+
+}

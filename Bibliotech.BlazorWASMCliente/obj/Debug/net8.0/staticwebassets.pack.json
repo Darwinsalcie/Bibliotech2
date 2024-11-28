@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\obj\\Debug\\net8.0\\compressed\\pjo6o3ofmo.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Bibliotech.BlazorWASMCliente.styles.css",
+      "PackagePath": "staticwebassets\\Bibliotech.BlazorWASMCliente.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\icons\\books.svg",
+      "PackagePath": "staticwebassets\\icons\\books.svg"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\icons\\f7--trash.svg",
+      "PackagePath": "staticwebassets\\icons\\f7--trash.svg"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\icons\\fluent-mdl2--reservation-orders.svg",
+      "PackagePath": "staticwebassets\\icons\\fluent-mdl2--reservation-orders.svg"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\icons\\mdi--pencil.svg",
+      "PackagePath": "staticwebassets\\icons\\mdi--pencil.svg"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\icons\\mingcute--notification-fill.svg",
+      "PackagePath": "staticwebassets\\icons\\mingcute--notification-fill.svg"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\icons\\typcn--user.svg",
+      "PackagePath": "staticwebassets\\icons\\typcn--user.svg"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\darwi\\OneDrive\\Desktop\\New Blazor\\Bibliotech.Api - Copy\\Bibliotech.BlazorWASMCliente\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Bibliotech.BlazorWASMCliente.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Bibliotech.BlazorWASMCliente.props",
+      "PackagePath": "build\\Bibliotech.BlazorWASMCliente.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Bibliotech.BlazorWASMCliente.props",
+      "PackagePath": "buildMultiTargeting\\Bibliotech.BlazorWASMCliente.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Bibliotech.BlazorWASMCliente.props",
+      "PackagePath": "buildTransitive\\Bibliotech.BlazorWASMCliente.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

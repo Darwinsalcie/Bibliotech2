@@ -1,0 +1,22 @@
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\bin\Debug\net8.0\Bibliotech.Shared.deps.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\bin\Debug\net8.0\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\bin\Debug\net8.0\Bibliotech.Shared.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.AssemblyInfoInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.AssemblyInfo.cs
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.csproj.CoreCompileInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\refint\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Shared\obj\Debug\net8.0\ref\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\bin\Debug\net8.0\Bibliotech.Shared.deps.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\bin\Debug\net8.0\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\bin\Debug\net8.0\Bibliotech.Shared.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.AssemblyInfoInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.AssemblyInfo.cs
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.csproj.CoreCompileInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\refint\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\Bibliotech.Shared.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Shared\obj\Debug\net8.0\ref\Bibliotech.Shared.dll

@@ -1,0 +1,84 @@
+﻿@page "/login"
+@using CurrieTechnologies.Razor.SweetAlert2
+@using System.ComponentModel.DataAnnotations
+@using Bibliotech.Shared.Usuarios
+@using Bibliotech.BlazorWASMCliente.Services.Usuarios
+
+
+@inject IUsuariosService usuarioService
+@inject NavigationManager navegacion
+@inject SweetAlertService Swal
+
+<h3>Login</h3>
+
+<EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <InputText id="email" @bind-Value="loginModel.Email" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="password">Password</label>
+        <InputText id="password" type="password" @bind-Value="loginModel.Password" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Login</button>
+</EditForm>
+
+
+
+@code {
+    private LoginModel loginModel = new LoginModel();
+
+    private async Task HandleLogin()
+    {
+        var response = await usuarioService.GetUsuarioByMail(loginModel.Email);
+
+        if (response?.Success == true && response.Value != null)
+        {
+            var usuario = response.Value;
+
+            if (usuario.Password == loginModel.Password && usuario.RoleName == "Cliente")
+            {
+                navegacion.NavigateTo("/libros/lista/"+usuario.Id);
+            }
+            else
+            {
+                await Swal.FireAsync(new SweetAlertOptions
+                    {
+                        Title = "Error",
+                        Text = "Contraseña incorrecta",
+                        Icon = SweetAlertIcon.Error
+                    });
+            }
+        }
+        else
+        {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Error",
+                    Text = "Correo no encontrado",
+                    Icon = SweetAlertIcon.Error
+                });
+        }
+    }
+
+
+    public class LoginModel
+    {
+        [Required(ErrorMessage = "El email es requerido")]
+        [EmailAddress(ErrorMessage = "Formato de email inválido")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "La contraseña es requerida")]
+        public string Password { get; set; }
+    }
+}
+
+
+
+
+

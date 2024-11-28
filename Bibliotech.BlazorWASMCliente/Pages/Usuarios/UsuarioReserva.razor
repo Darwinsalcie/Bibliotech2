@@ -1,0 +1,119 @@
+﻿@page "/usuario/reserva/{idReservaUser:int}"
+
+
+@using Bibliotech.BlazorWASMCliente.Services
+@using CurrieTechnologies.Razor.SweetAlert2
+@using Bibliotech.Shared.Usuarios;
+@using Bibliotech.BlazorWASMCliente.Services.Reservas;
+@using Bibliotech.Shared.Reserva;
+@using Bibliotech.BlazorWASMCliente.Services.Usuarios;
+@using Bibliotech.Shared.Libros;
+@using Bibliotech.BlazorWASMCliente.Services.Libros;
+
+
+@inject SweetAlertService Swal;
+@inject IReservasService reservaService;
+@inject IUsuariosService usuarioService;
+@inject ILibrosService libroService;
+
+
+<h3>Reservas</h3>
+<h4>@usuarioName</h4>
+
+
+@*  <a class="btn btn-success btn-sm mb-3" href="/usuario/reserva/crear/@idReservaUser">Nueva Notificacion</a> *@
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Libro</th>
+            <th>Status</th>
+            <th>Fecha de Envío</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (listaReservas == null)
+        {
+
+            <tr>
+                <td colspan="5" align="center">
+                    <img style="width:50px" src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" />
+                </td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var item in listaReservas)
+            {
+                <tr>
+                    <td>@item.BookName</td>
+                    <td>@item.ReservationDate?.ToString("dd/MM/yyyy")</td>
+                    <td></td>
+
+@*                     <td>
+                        <a class="btn btn-primary btn-sm" href="usuario/notificaciones/actualizar/@item.Id">
+                            <img src="/icons/mdi--pencil.svg" width="24" height="24" />
+                        </a>
+                        <button type="button" class="btn btn-danger btn-sm ms-2" @onclick="(() => Eliminar(item.Id))">
+                            <img src="/icons/f7--trash.svg" width="24" height="24" />
+                        </button>
+
+                    </td> *@
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<a class="btn btn-warning" href="/libros/lista/@idReservaUser">Volver</a>
+
+
+
+@code {
+    [Parameter]
+    public int idReservaUser { get; set; } = 0;
+    List<ReservaDTO>? listaReservas = null;
+    LibroDTO? Libro = null;
+    UsuarioDTO? usuario = null;
+    string? usuarioName = null;
+    string? correo = null;
+    Dictionary<int, string>? libroNombres = new(); // Diccionario para almacenar BookId y nombre del libro.
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        listaReservas = await reservaService.GetReservasByUserId(idReservaUser);
+        usuario = await usuarioService.GetUsuarioById(idReservaUser);
+        usuarioName = usuario.Name;
+
+
+        }
+    private async Task Eliminar(int id)
+    {
+        var resultado = await Swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Eliminar Reserva",
+                Text = "Deseas eliminar la Reservación?",
+                Icon = SweetAlertIcon.Question,
+                ShowCancelButton = true
+            });
+
+        if (resultado.IsConfirmed)
+        {
+            var eliminado = await reservaService.Eliminar(id);
+
+            if (eliminado)
+                listaReservas = listaReservas!.FindAll(e => e.Id != id);
+
+        }
+
+
+    }
+
+}
+
+
+
+ 

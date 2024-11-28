@@ -1,0 +1,97 @@
+﻿@page "/usuario/notificaciones/actualizar/{idNotificacionEditar:int}"
+
+
+@using Bibliotech.Shared;
+@using Bibliotech.BlazorWASM.Services;
+@using Bibliotech.Shared.Notificaciones;
+@using Bibliotech.BlazorWASM.Services.Notificaciones;
+
+
+@using CurrieTechnologies.Razor.SweetAlert2
+
+@inject SweetAlertService Swal;
+@inject NavigationManager navegacion;
+@inject INotificacionesService notificacionService;
+
+<h3>@titulo</h3>
+
+
+<EditForm Model="notificacion" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+
+    <div class="mb-3">
+        <label class="form-label">Titulo</label>
+        <InputText class="form-control" @bind-Value="notificacion.Type"></InputText>
+        <ValidationMessage For="@(() => notificacion.Type)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Message</label>
+        <InputText class="form-control" @bind-Value="notificacion.Message"></InputText>
+        <ValidationMessage For="@(() => notificacion.Message)"></ValidationMessage>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">
+        @btnTexto
+    </button>
+
+    <a class="btn btn-warning" href="/usuario/notificaciones/@UserId">Volver</a>
+
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public int idNotificacionEditar { get; set; } = 0;
+    public int UserId { get; set; } = 0;
+    string titulo = string.Empty;
+    string btnTexto = string.Empty;
+
+    NotificacionDTO notificacion = new NotificacionDTO();
+    List<NotificacionDTO> listaNotificaciones = new List<NotificacionDTO>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+            notificacion = await notificacionService.GetNotificacionesById(idNotificacionEditar);
+            btnTexto = "Actualizar Notificaión";
+            titulo = "Editar Notificaión";
+            UserId = notificacion.UserId;
+            notificacion.FechaEnvio = DateTime.Now;
+
+
+    }
+
+    private async Task<bool> ValidarLongitud(string campo, string valor, int longitudMaxima)
+    {
+        if (!string.IsNullOrEmpty(valor) && valor.Length > longitudMaxima)
+        {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Error de Validación",
+                    Text = $"El campo '{campo}' no puede tener más de {longitudMaxima} caracteres.",
+                    Icon = SweetAlertIcon.Error
+                });
+            return false;
+        }
+        return true;
+    }
+
+    private async Task OnValidSubmit()
+    {
+        if (!await ValidarLongitud("Titulo", notificacion.Type, 100)) return;
+        if (!await ValidarLongitud("Titulo", notificacion.Message, 255)) return;
+        int idDevuelto = 0;
+
+            idDevuelto = await notificacionService.Actualizar(notificacion);
+
+        if (idDevuelto != 0)
+            navegacion.NavigateTo($"usuario/notificaciones/{notificacion.UserId}");
+
+
+    }
+
+
+}

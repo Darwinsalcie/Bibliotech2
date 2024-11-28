@@ -1,0 +1,100 @@
+﻿@page "/usuario/notificaciones/{idNotificacionesUser:int}"
+
+
+@using Bibliotech.BlazorWASMCliente.Services
+@using CurrieTechnologies.Razor.SweetAlert2
+@using Bibliotech.Shared.Usuarios;
+@using Bibliotech.BlazorWASMCliente.Services.Notificaciones;
+@using Bibliotech.Shared.Notificaciones;
+@using Bibliotech.BlazorWASMCliente.Services.Usuarios;
+
+@inject SweetAlertService Swal;
+@inject INotificacionesService notificacionService;
+@inject IUsuariosService usuarioService;
+
+<h3>Notificaciones</h3>
+<h4>@usuarioName</h4>
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titulo</th>
+            <th>Mensaje</th>
+            <th>Fecha de Envío</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (listaNotificaciones == null)
+        {
+
+            <tr>
+                <td colspan="5" align="center">
+                    <img style="width:50px" src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" />
+                </td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var item in listaNotificaciones)
+            {
+                <tr>
+                    <td>@item.Type</td>
+                    <td>@item.Message</td>
+                    <td>@item.FechaEnvio.ToString("dd/MM/yyyy")</td>
+
+
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<a class="btn btn-warning" href="/libros/lista/@idNotificacionesUser">Volver</a>
+
+
+
+
+
+@code {
+    [Parameter]
+    public int idNotificacionesUser { get; set; } = 0; 
+    List<NotificacionDTO>? listaNotificaciones = null;
+    UsuarioDTO? usuario = null;
+    string? usuarioName = null;
+    string? correo = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        listaNotificaciones = await notificacionService.GetNotificacionesByUserId(idNotificacionesUser);
+        usuario = await usuarioService.GetUsuarioById(idNotificacionesUser);
+        usuarioName = usuario.Name;
+        correo = usuario.EMail;
+    }
+
+    private async Task Eliminar(int id)
+    {
+        var resultado = await Swal.FireAsync(new SweetAlertOptions
+            {
+                Title = "Eliminar Notificación",
+                Text = "Deseas eliminar la notificacición?",
+                Icon = SweetAlertIcon.Question,
+                ShowCancelButton = true
+            });
+
+        if (resultado.IsConfirmed)
+        {
+            var eliminado = await notificacionService.Eliminar(id);
+
+            if (eliminado)
+                listaNotificaciones = listaNotificaciones!.FindAll(e => e.Id != id);
+
+        }
+
+
+    }
+
+}

@@ -1,0 +1,144 @@
+﻿@page "/usuarios/nuevo"
+@page "/usuarios/{idUsuarioEditar:int}"
+
+
+@using Bibliotech.Shared.Usuarios
+@using Bibliotech.BlazorWASM.Services.Usuarios
+@using Bibliotech.BlazorWASM.Services.Roles
+@using Bibliotech.Shared.Role
+@using CurrieTechnologies.Razor.SweetAlert2
+
+@inject SweetAlertService Swal;
+@inject IUsuariosService usuarioService
+@inject IRolesService rolesService
+@inject NavigationManager navegacion
+
+<h3>@titulo</h3>
+
+
+<EditForm Model="usuario" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <InputText class="form-control" @bind-Value="usuario.Name"></InputText>
+        <ValidationMessage For="@(() => usuario.Name)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">E-mail</label>
+        <InputText class="form-control" @bind-Value="usuario.EMail"></InputText>
+        <ValidationMessage For="@(() => usuario.EMail)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Contraseña</label>
+        <InputText class="form-control" @bind-Value="usuario.Password" type="password"></InputText>
+        <ValidationMessage For="@(() => usuario.Password)"></ValidationMessage>
+    </div>
+
+
+    <div class="mb-3">
+        <label class="form-label">Rol</label>
+        <InputSelect class="form-control" @bind-Value="usuario.RoleName">
+            <option >Seleccione el rol...</option>
+            <option value="Cliente">Cliente</option>
+            <option value="Empleado">Empleado</option>
+            <option value="Administrador">Administrador</option>
+        </InputSelect>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">
+        @btnTexto
+    </button>
+
+    <a class="btn btn-warning" href="/usuarios">Volver</a>
+
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public int idUsuarioEditar { get; set; } = 0;
+
+    string titulo = string.Empty;
+    string btnTexto = string.Empty;
+
+    UsuarioDTO usuario = new UsuarioDTO();
+    List<UsuarioDTO> listaUsuarios = new List<UsuarioDTO>();
+    List<RoleDTO>? roles = null;
+
+    private async Task<bool> ValidarLongitud(string campo, string valor, int longitudMaxima)
+    {
+        if (!string.IsNullOrEmpty(valor) && valor.Length > longitudMaxima)
+        {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Error de Validación",
+                    Text = $"El campo '{campo}' no puede tener más de {longitudMaxima} caracteres.",
+                    Icon = SweetAlertIcon.Error
+                });
+            return false;
+        }
+        return true;
+    }
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        //ValidarCampos
+        if (!await ValidarLongitud("Nombre", usuario.Name, 50)) return;
+        if (!await ValidarLongitud("E-Mail", usuario.EMail, 100)) return;
+        if (!await ValidarLongitud("E-Mail", usuario.Password, 100)) return;
+
+
+        roles = await rolesService.GetRoles();
+
+        if (idUsuarioEditar != 0)
+        {
+            usuario = await usuarioService.GetUsuarioById(idUsuarioEditar);
+            btnTexto = "Actualizar Libro";
+            titulo = "Editar Libro";
+        }
+        else
+        {
+            usuario = new UsuarioDTO();
+            btnTexto = "Guardar Usuario";
+            titulo = "Nuevo Usuario";
+            usuario.ModifyDate = DateTime.Today;
+
+        }
+        listaUsuarios = await usuarioService.GetUsuarios();
+    }
+
+    private async Task OnValidSubmit()
+    {
+        try
+        {
+            int idDevuelto = 0;
+            if (idUsuarioEditar == 0) // Crear usuario
+            {
+                idDevuelto = await usuarioService.Guardar(usuario);
+            }
+            else // Actualizar usuario
+            {
+                idDevuelto = await usuarioService.Actualizar(usuario);
+            }
+
+            if (idDevuelto != 0)
+            {
+                await Swal.FireAsync("Éxito", "Usuario guardado correctamente.", SweetAlertIcon.Success);
+                navegacion.NavigateTo("/usuarios");
+            }
+        }
+        catch (Exception ex)
+        {
+            await Swal.FireAsync("Error", ex.Message, SweetAlertIcon.Error);
+        }
+    }
+
+
+
+}

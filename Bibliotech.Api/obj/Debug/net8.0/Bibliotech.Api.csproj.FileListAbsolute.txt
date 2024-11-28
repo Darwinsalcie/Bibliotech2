@@ -1,0 +1,146 @@
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\efpt.config.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.exe
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.deps.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.runtimeconfig.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.csproj.AssemblyReference.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.AssemblyInfoInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.AssemblyInfo.cs
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.csproj.CoreCompileInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.Bibliotech.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.Bibliotech.Api.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Bibliotech.Api.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Bibliotech.Api.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\scopedcss\bundle\Bibliotech.Api.styles.css
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliote.1D32775B.Up2Date
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\refint\Bibliotech.Api.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.genruntimeconfig.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\obj\Debug\net8.0\ref\Bibliotech.Api.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Shared.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\efpt.config.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.exe
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.deps.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.runtimeconfig.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Api.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Shared.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\bin\Debug\net8.0\Bibliotech.Shared.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.csproj.AssemblyReference.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.AssemblyInfoInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.AssemblyInfo.cs
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.csproj.CoreCompileInputs.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.Bibliotech.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.Bibliotech.Api.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Bibliotech.Api.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Bibliotech.Api.props
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\scopedcss\bundle\Bibliotech.Api.styles.css
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliote.1D32775B.Up2Date
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\refint\Bibliotech.Api.dll
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.pdb
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\Bibliotech.Api.genruntimeconfig.cache
+C:\Users\darwi\OneDrive\Desktop\New Blazor\Bibliotech.Api - Copy\Bibliotech.Api\obj\Debug\net8.0\ref\Bibliotech.Api.dll

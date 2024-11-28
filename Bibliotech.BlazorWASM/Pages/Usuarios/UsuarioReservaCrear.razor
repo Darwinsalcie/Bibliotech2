@@ -1,0 +1,80 @@
+﻿@* @page "/usuario/reserva/crear/{userId:int}"
+
+
+@using Bibliotech.Shared;
+@using Bibliotech.BlazorWASM.Services;
+@using Bibliotech.Shared.Reserva;
+@using Bibliotech.BlazorWASM.Services.Reservas;
+
+
+
+@inject NavigationManager navegacion;
+@inject IReservasService reservaService;
+
+<h3>@titulo</h3>
+
+
+<EditForm Model="reserva" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+
+    <div class="mb-3">
+        <label class="form-label">Titulo</label>
+        <InputText class="form-control" @bind-Value="reserva.Type"></InputText>
+        <ValidationMessage For="@(() => reserva.Type)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Message</label>
+        <InputText class="form-control" @bind-Value="reserva.Message"></InputText>
+        <ValidationMessage For="@(() => reserva.Message)"></ValidationMessage>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">
+        @btnTexto
+    </button>
+
+    <a class="btn btn-warning" href="/usuario/notificaciones/@UserId">Volver</a>
+
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public int idNotificacionEditar { get; set; } = 0;
+    [Parameter]
+    public int UserId { get; set; } = 0;
+    string titulo = string.Empty;
+    string btnTexto = string.Empty;
+
+    ReservaDTO reserva = new ReservaDTO();
+    List<ReservaDTO> listaNotificaciones = new List<ReservaDTO>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        reserva.ReservationDate = DateTime.Today;
+        reserva.UserId = UserId;
+        btnTexto = "Guardar Reserva";
+        titulo = "Nueva Reserva";
+
+    }
+
+    private async Task OnValidSubmit()
+    {
+        int idDevuelto = 0;
+
+        idDevuelto = await reservaService.Guardar(reserva);
+
+
+        if (idDevuelto != 0)
+            navegacion.NavigateTo($"/usuario/reserva/{reserva.UserId}");
+
+
+    }
+
+
+}
+ *@

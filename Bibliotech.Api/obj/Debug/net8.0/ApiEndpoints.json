@@ -1,0 +1,477 @@
+[
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.LibrosController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Libros/ActualizarLibro/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "libro",
+        "Type": "Bibliotech.Shared.Libros.LibroDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.LibrosController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Libros/EliminarLibro/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.LibrosController",
+    "Method": "GetAll",
+    "RelativePath": "api/Libros/GetAllBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.LibrosController",
+    "Method": "GetBookById",
+    "RelativePath": "api/Libros/GetBookById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.LibrosController",
+    "Method": "GetBookByTittle",
+    "RelativePath": "api/Libros/GetBookByTittle/{tittle}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tittle",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.LibrosController",
+    "Method": "Guardar",
+    "RelativePath": "api/Libros/GuardarLibro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "libro",
+        "Type": "Bibliotech.Shared.Libros.LibroDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.NotificacionesController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Notificaciones/ActualizarNotificacion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificacion",
+        "Type": "Bibliotech.Shared.Notificaciones.NotificacionDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.NotificacionesController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Notificaciones/EliminarNotificacion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.NotificacionesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Notificaciones/GetAllNotificaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.NotificacionesController",
+    "Method": "GetNotifiacionesById",
+    "RelativePath": "api/Notificaciones/GetNotificacionesById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.NotificacionesController",
+    "Method": "GetNotificacionesByUserId",
+    "RelativePath": "api/Notificaciones/GetNotificacionesByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.NotificacionesController",
+    "Method": "Guardar",
+    "RelativePath": "api/Notificaciones/GuardarNotificacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notificacion",
+        "Type": "Bibliotech.Shared.Notificaciones.NotificacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.ReservasController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Reservas/ActualizarReserva/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reserva",
+        "Type": "Bibliotech.Shared.Reserva.ReservaDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.ReservasController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Reservas/EliminarReserva/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.ReservasController",
+    "Method": "GetAll",
+    "RelativePath": "api/Reservas/GetAllReservas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.ReservasController",
+    "Method": "GetReservaById",
+    "RelativePath": "api/Reservas/GetReservaById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.ReservasController",
+    "Method": "GetReservasByUserId",
+    "RelativePath": "api/Reservas/GetReservasByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.ReservasController",
+    "Method": "Guardar",
+    "RelativePath": "api/Reservas/GuardarReserva",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reserva",
+        "Type": "Bibliotech.Shared.Reserva.ReservaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.RolesController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Roles/ActualizarRole/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "Bibliotech.Shared.Role.RoleDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.RolesController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Roles/EliminarRole/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.RolesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Roles/GetAllRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.RolesController",
+    "Method": "GetBookById",
+    "RelativePath": "api/Roles/GetRoleById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.RolesController",
+    "Method": "Guardar",
+    "RelativePath": "api/Roles/GuardarRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "Bibliotech.Shared.Role.RoleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.UsuariosController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Usuarios/ActualizarUsuario/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "Bibliotech.Shared.Usuarios.UsuarioDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.UsuariosController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Usuarios/EliminarUsuario/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.UsuariosController",
+    "Method": "GetAll",
+    "RelativePath": "api/Usuarios/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.UsuariosController",
+    "Method": "GetUserById",
+    "RelativePath": "api/Usuarios/GetUserById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.UsuariosController",
+    "Method": "GetUserByMail",
+    "RelativePath": "api/Usuarios/GetUserByMail/{email}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.UsuariosController",
+    "Method": "Guardar",
+    "RelativePath": "api/Usuarios/GuardarUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "Bibliotech.Shared.Usuarios.UsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bibliotech.Api.Controllers.UsuariosController",
+    "Method": "Login",
+    "RelativePath": "api/Usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Bibliotech.Shared.Usuarios.UsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

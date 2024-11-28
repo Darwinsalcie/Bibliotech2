@@ -1,0 +1,148 @@
+﻿@page "/libros/nuevo"
+@page "/libros/{idLibroEditar:int}"
+
+
+@using Bibliotech.Shared;
+@using Bibliotech.BlazorWASM.Services;
+@using Bibliotech.Shared.Libros;
+@using Bibliotech.BlazorWASM.Services.Libros;
+@using CurrieTechnologies.Razor.SweetAlert2
+
+
+
+@inject SweetAlertService Swal;
+@inject ILibrosService libroService;
+@inject NavigationManager navegacion;
+
+<h3>@titulo</h3>
+
+
+<EditForm Model="libro" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+
+
+    <div class="mb-3">
+        <label class="form-label">Titulo</label>
+        <InputText class="form-control" @bind-Value="libro.Tittle"></InputText>
+        <ValidationMessage For="@(() => libro.Tittle)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Link de la portada</label>
+        <InputText class="form-control" @bind-Value="libro.PictureLink"></InputText>
+        <ValidationMessage For="@(() => libro.PictureLink)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Autor</label>
+        <InputText class="form-control" @bind-Value="libro.Autor"></InputText>
+        <ValidationMessage For="@(() => libro.Autor)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Género</label>
+        <InputText class="form-control" @bind-Value="libro.Genero"></InputText>
+        <ValidationMessage For="@(() => libro.Genero)"></ValidationMessage>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">ISBN (International Standard Book Number)</label>
+        <InputText class="form-control" @bind-Value="libro.Isbn"></InputText>
+        <ValidationMessage For="@(() => libro.Isbn)"></ValidationMessage>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Estado</label>
+        <InputSelect class="form-control" @bind-Value="libro.Status">
+            <option >Seleccione el estado</option>
+            <option value="Disponible">Disponible</option>
+            <option value="No disponible">No disponible</option>
+        </InputSelect>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">"Fecha de Publicación"</label>
+        <InputDate class="form-control" @bind-Value="libro.PublicationDate"></InputDate>
+        <ValidationMessage For="@(() => libro.PublicationDate)"></ValidationMessage>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">"Fecha de Expiración"</label>
+        <InputDate class="form-control" @bind-Value="libro.ExpireDate"></InputDate>
+        <ValidationMessage For="@(() => libro.ExpireDate)"></ValidationMessage>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit">
+        @btnTexto
+    </button>
+
+    <a class="btn btn-warning" href="/libros">Volver</a>
+
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public int idLibroEditar { get; set; } = 0;
+
+
+    string titulo = string.Empty;
+    string btnTexto = string.Empty;
+
+    LibroDTO libro = new LibroDTO();
+    // List<LibroDTO> listaLibros = new List<LibroDTO>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (idLibroEditar != 0)
+        {
+            libro = await libroService.GetBookById(idLibroEditar);
+            btnTexto = "Actualizar Libro";
+            titulo = "Editar Libro";
+        }
+        else
+        {
+            libro.ModifyDate = DateTime.Today;
+            btnTexto = "Guardar Libro";
+            titulo = "Nuevo Libro";
+        }
+        // listaLibros = await libroService.GetLibros();
+    }
+    private async Task<bool> ValidarLongitud(string campo, string valor, int longitudMaxima)
+    {
+        if (!string.IsNullOrEmpty(valor) && valor.Length > longitudMaxima)
+        {
+            await Swal.FireAsync(new SweetAlertOptions
+                {
+                    Title = "Error de Validación",
+                    Text = $"El campo '{campo}' no puede tener más de {longitudMaxima} caracteres.",
+                    Icon = SweetAlertIcon.Error
+                });
+            return false;
+        }
+        return true;
+    }
+
+    private async Task OnValidSubmit()
+    {
+        // Validar la longitud de los campos relevantes
+        if (!await ValidarLongitud("ISBN", libro.Isbn, 13)) return;
+        if (!await ValidarLongitud("Título", libro.Tittle, 100)) return;
+        if (!await ValidarLongitud("Autor", libro.Autor, 50)) return;
+        if (!await ValidarLongitud("Género", libro.Genero, 50)) return;
+        if (!await ValidarLongitud("Género", libro.PictureLink, 255)) return;
+
+
+        int idDevuelto = 0;
+        if (idLibroEditar == 0)
+            idDevuelto = await libroService.Guardar(libro);
+        else
+            idDevuelto = await libroService.Actualizar(libro);
+
+        if (idDevuelto != 0)
+            navegacion.NavigateTo($"/libros");
+
+
+    }
+
+
+}
